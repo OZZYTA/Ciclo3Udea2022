@@ -82,6 +82,8 @@ public class Bacata {
         System.out.println(TPL.isDerechoVIP());
         
         System.out.println("");
+		
+		// Estoy modificando este archivo para poder probar que pasa con las ramas
         
         Black TBL= new Black("002","Lola López","lolita@lopez.com");
         System.out.println("Tengo derecho a mi beneficio 2?");
