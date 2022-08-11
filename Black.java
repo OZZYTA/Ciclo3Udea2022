@@ -15,6 +15,8 @@ public class Black extends Bacata{
         }
         return false;
     }
+	
+	//Estamos probando la interfaz grafica
 
     public String[] getBeneficios() {
         return beneficios;
