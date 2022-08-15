@@ -1,10 +1,10 @@
-package com.UdeA.Ciclo3;
+package com.example.demo;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ProyectoClaseApplicationTests {
+class DemoApplicationTests {
 
 	@Test
 	void contextLoads() {
