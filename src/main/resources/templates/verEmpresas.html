@@ -7,13 +7,22 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+    a{
+    color:white;
+    }
+    a:hover {
+    color: black;
+    text-decoration:none;
+    }
+</style>
 </head>
 <body>
 
 <div class="container">
     <h1> Lista de Empresas</h1>
     <!--Dibujamos la tabla-->
-    <table class="table">
+    <br><table class="table table-bordered">
         <tr>
             <th>ID</th>
             <th>Nombre</th>
@@ -32,11 +41,13 @@
             <td th:text="${empresa.direccion}"></td>
             <td th:text="${empresa.telefono}"></td>
             <td th:text="${empresa.NIT}"></td>
-            <td><button type="button" class="btn btn-warning"><a th:href="@{/editarEmpresa}">Editar</a></button></td>
-            <td><button type="button" class="btn btn-danger"><a th:href="@{/eliminarEmpresa}">Eliminar</a></button></td>
+            <td><button type="button" class="btn btn-warning"><a th:href="@{/EditarEmpresa}">Editar</a></button></td>
+            <td><button type="button" class="btn btn-danger"><a th:href="@{/EliminarEmpresa}">Eliminar</a></button></td>
         </tr>
     </table>
 
+    <!-- vamos a crear un boton que sirva para agregar nuevas empresas -->
+    <button type="button" class="btn btn-info"><a th:href="@{/AgregarEmpresa}">Agregar Nueva Empresa</a></button>
 
 </div>
 
