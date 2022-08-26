@@ -5,8 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 <style>
     a{
     color:white;
@@ -50,6 +52,34 @@
     <button type="button" class="btn btn-info"><a th:href="@{/AgregarEmpresa}">Agregar Nueva Empresa</a></button>
 
 </div>
+
+<script th:inline="javascript">
+    window.onload=function(){
+
+        var msg= [[${mensaje}]];
+        if (msg == "saveOK"){
+            Command : toastr["success"]("Empresa creada con éxito!")
+            }
+        else if (msg == "updateOK"){
+            Command : toastr["success"]("Empresa actualizada con éxito!")
+        }
+        else if (msg == "deleteOK"){
+            Command : toastr["error"]("Empresa eliminada con éxito!")
+        }
+        else if (msg == "deleteError"){
+            Command : toastr["error"]("Empresa no ha sido eliminada!")
+        }
+        toastr.options={
+            "positionClass": "toast-top-right",
+            "showDuration":"300",
+            "showMethod":"fadeIn",
+            "hideMethod":"fadeOut",
+        }
+
+
+    }
+
+</script>
 
 </body>
 </html>

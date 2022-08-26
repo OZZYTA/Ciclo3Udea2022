@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8d78257a-36da-4d01-9659-df657bde4083" name="Changes" comment="Template y servicios para Agregar nueva empresa">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/editarEmpresa.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+    <list default="true" id="8d78257a-36da-4d01-9659-df657bde4083" name="Changes" comment="Terminamos el crud basico de nuestra entidad empresa">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/UdeA/Ciclo3/controller/ControllerFull.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/UdeA/Ciclo3/controller/ControllerFull.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/UdeA/Ciclo3/service/EmpresaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/UdeA/Ciclo3/service/EmpresaService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/verEmpresas.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/verEmpresas.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -148,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661344604120</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Terminamos el crud basico de nuestra entidad empresa">
+      <created>1661432047095</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1661432047095</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -170,6 +176,7 @@
     <MESSAGE value="Html template de Ver empresas y servicio ver empresas en el controller" />
     <MESSAGE value="Template para Agregar nueva empresa" />
     <MESSAGE value="Template y servicios para Agregar nueva empresa" />
-    <option name="LAST_COMMIT_MESSAGE" value="Template y servicios para Agregar nueva empresa" />
+    <MESSAGE value="Terminamos el crud basico de nuestra entidad empresa" />
+    <option name="LAST_COMMIT_MESSAGE" value="Terminamos el crud basico de nuestra entidad empresa" />
   </component>
 </project>
