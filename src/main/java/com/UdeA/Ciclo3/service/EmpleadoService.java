@@ -29,7 +29,6 @@ public class EmpleadoService {
 
     //Metodo para buscar empleados por empresa
     public ArrayList<Empleado> obtenerPorEmpresa(Integer id){
-
         return empleadoRepository.findByEmpresa(id);
     }
 

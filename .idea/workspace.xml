@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d78257a-36da-4d01-9659-df657bde4083" name="Changes" comment="Controladores Rest, Nueva Rama">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/UdeA/Ciclo3/repo/EmpleadoRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/UdeA/Ciclo3/service/EmpleadoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/UdeA/Ciclo3/repo/MovimientosRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/UdeA/Ciclo3/service/MovimientosService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/UdeA/Ciclo3/controller/ControllerFull.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/UdeA/Ciclo3/controller/ControllerFull.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/UdeA/Ciclo3/service/EmpleadoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/UdeA/Ciclo3/service/EmpleadoService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
