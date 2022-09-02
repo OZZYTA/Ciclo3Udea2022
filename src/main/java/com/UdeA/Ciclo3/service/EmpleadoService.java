@@ -24,6 +24,7 @@ public class EmpleadoService {
 
     //Metodo para buscar empleados por ID
     public Optional<Empleado> getEmpleadoById(Integer id){ //Existe optional y asi se podria usar
+
         return empleadoRepository.findById(id);
     }
 
