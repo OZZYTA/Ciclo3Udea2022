@@ -65,6 +65,16 @@
       </div>
     </div>
 
+    <!--Campo para fecha-->
+    <div class="row">
+      <div class="form-group col-md-12">
+        <label class="col-md-3" for="fecha">Fecha del movimiento:</label>
+        <div class="col-md-6">
+          <input type="date" th:field="*{fecha}" class="form-control" id="fecha" required="required" readonly></div>
+      </div>
+    </div>
+
+
 
 
     <!--Boton para enviar todo y ejecutar accion -->
@@ -80,5 +90,12 @@
   <a href="javascript: history.go(-1)" class="btn btn-info" role="button">Atrás</a>
 
 </div>
+<script th:inline="javascript">
+  window.onload=function(){
+  document.getElementById("fecha").value=new Date().toJSON().slice(0,10).replace(/-/g,'-');
+  }
+</script>
+
+
 </body>
 </html>

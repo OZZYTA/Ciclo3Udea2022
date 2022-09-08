@@ -28,9 +28,10 @@
     <br><table class="table table-bordered">
         <tr>
             <th>ID</th>
-            <th>Valor</th>
+            <th class="text-right">Valor</th>
             <th>Concepto</th>
             <th>Usuario Responsable</th>
+            <th>Fecha del Movimiento</th>
             <th>Editar</th>
             <th>Eliminar</th>
         </tr>
@@ -39,7 +40,7 @@
         <!--En nuestro controller, creamos en viewMovimientos un modelo con un atributo llamado movlist donde esta guardada la lista de todos los movimientos-->
         <tr th:each="movimiento : ${movlist}">
             <td th:text="${movimiento.id}"></td>
-            <td th:text="${movimiento.monto}"></td>
+            <td class="text-right" th:text="${#numbers.formatCurrency(movimiento.monto)}"></td>
             <td th:if="${movimiento.concepto=='1'}">Papeleria</td>
             <td th:if="${movimiento.concepto=='2'}">Servicios Publicos/privados</td>
             <td th:if="${movimiento.concepto=='3'}">Operativos</td>
@@ -49,10 +50,20 @@
             <td th:if="${movimiento.concepto=='7'}">Maquinaria y Equipo</td>
             <td th:if="${movimiento.concepto=='8'}">Nomina</td>
             <td th:text="${movimiento.usuario.nombre}"></td>
+            <td th:text="${#dates.format(movimiento.fecha, 'dd/MM/yyyy')}"></td>
             <td><button type="button" class="btn btn-warning"><a th:href="@{/EditarMovimiento/{id}(id=${movimiento.id})}">Editar</a></button></td>
             <td><button type="button" class="btn btn-danger"><a th:href="@{/EliminarMovimiento/{id}(id=${movimiento.id})}">Eliminar</a></button></td>
         </tr>
     </table>
+
+    <div class="row">
+        <div class="form-group col-md-12">
+            <label class="col-md-3" for="SumaMontos">Total Movimientos:</label>
+            <div class="col-md-6">
+                <p th:text="${#numbers.formatCurrency(SumaMontos)}" class="form-control" id="SumaMontos"></p>
+            </div>
+        </div>
+    </div>
 
     <!-- vamos a crear un boton que sirva para agregar nuevos movimientos -->
     <button type="button" class="btn btn-info"><a th:href="@{/AgregarMovimiento}">Agregar Nuevo Movimiento</a></button>
