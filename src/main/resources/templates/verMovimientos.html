@@ -56,6 +56,18 @@
         </tr>
     </table>
 
+    <!-- CAMPO PARA EL AREA DE NAVEGACION -->
+    <nav aria-label="Ejemplo navegacion">
+        <ul class="pagination mt-4">
+            <li th:class="${paginaActual==estado.index} ? 'active' : '' " th:each="pagina, estado: ${paginas}" class="page-item">
+                <a th:href="@{/VerMovimientos/(pagina=${estado.index})}" class="page-link" th:text="${estado.index}+1"></a>
+            </li>
+        </ul>
+    </nav>
+
+
+
+    <!-- Campo para ver la suma de TODOS LOS MOVIMIENTOS FILTRADOS -->
     <div class="row">
         <div class="form-group col-md-12">
             <label class="col-md-3" for="SumaMontos">Total Movimientos:</label>
