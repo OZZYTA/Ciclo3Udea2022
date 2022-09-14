@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 
-@SpringBootApplication (exclude ={SecurityAutoConfiguration.class})
+@SpringBootApplication
 public class Ciclo3Application {
 
 	@GetMapping("/hello")

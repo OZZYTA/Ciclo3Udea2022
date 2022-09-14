@@ -22,6 +22,8 @@
 <body>
 
 <div class="container">
+    <button type="button" class="btn btn-danger" style="float:right"><a th:href="@{/logout}">Cerrar Sesión</a></button>
+
     <h1> Lista de Empresas</h1>
     <!--Dibujamos la tabla-->
     <br><table class="table table-bordered">
@@ -57,6 +59,7 @@
     <button type="button" class="btn btn-info"><a th:href="@{/AgregarEmpresa}">Agregar Nueva Empresa</a></button>
     <br><br>
     <button type="button" class="btn btn-primary"><a th:href="@{/VerEmpleados}">Ver lista de Empleados</a></button>
+
 </div>
 
 <script th:inline="javascript">

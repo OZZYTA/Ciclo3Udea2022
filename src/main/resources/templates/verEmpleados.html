@@ -22,6 +22,8 @@
 <body>
 
 <div class="container">
+    <button type="button" class="btn btn-danger" style="float:right"><a th:href="@{/logout}">Cerrar Sesión</a></button>
+
     <h1> Lista de Empleados</h1>
     <!--Dibujamos la tabla-->
     <br><table class="table table-bordered">
@@ -31,6 +33,7 @@
             <th>Correo</th>
             <th>Empresa</th>
             <th>Rol</th>
+            <th>Estado</th>
             <th>Movimientos</th>
             <th>Editar</th>
             <th>Eliminar</th>
@@ -45,6 +48,8 @@
             <td th:text="${empleado.empresa.nombre}"></td>
             <td th:if="${empleado.rol=='1'}">Administrativo</td>
             <td th:if="${empleado.rol=='2'}">Operativo</td>
+            <td th:if="${empleado.estado==true}">Activo</td>
+            <td th:if="${empleado.estado==false}">Inactivo</td>
             <td><button type="button" class="btn btn-info"><a th:href="@{/Empleado/{id}/Movimientos(id=${empleado.id})}">Ver</a></button></td>
             <td><button type="button" class="btn btn-warning"><a th:href="@{/EditarEmpleado/{id}(id=${empleado.id})}">Editar</a></button></td>
             <td><button type="button" class="btn btn-danger"><a th:href="@{/EliminarEmpleado/{id}(id=${empleado.id})}">Eliminar</a></button></td>

@@ -20,6 +20,8 @@
 <body>
 
 <div class="container">
+  <button type="button" class="btn btn-danger" style="float:right"><a th:href="@{/logout}">Cerrar Sesión</a></button>
+
   <h1> Actualice aqui los datos del Empleado</h1>
   <br>
   <!--Crear formulario para llenar los datos de la empresa y guardarlo en el objeto emp -->
@@ -71,8 +73,30 @@
         <label class="col-md-3" for="rol">Rol del empleado:</label>
         <div class="col-md-6">
           <select th:field="*{rol}" class="form-control" id="rol" required="required">
-            <option th:value=1>Administrativo</option>
-            <option th:value=2>Operativo</option>
+            <option th:value="ROLE_ADMIN">Administrativo</option>
+            <option th:value="ROLE_USER">Operativo</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!--Campo para contraseña-->
+    <div class="row">
+      <div class="form-group col-md-12">
+        <label class="col-md-3" for="password">Contraseña del empleado:</label>
+        <div class="col-md-6">
+          <input type="password" th:field="*{password}" class="form-control" id="password"></div>
+      </div>
+    </div>
+
+    <!--Campo para Estado-->
+    <div class="row">
+      <div class="form-group col-md-12">
+        <label class="col-md-3" for="estado">Estado actual del empleado:</label>
+        <div class="col-md-6">
+          <select th:field="*{estado}" class="form-control" id="estado" required="required">
+            <option th:value=1>Activo</option>
+            <option th:value=0>Inactivo</option>
           </select>
         </div>
       </div>

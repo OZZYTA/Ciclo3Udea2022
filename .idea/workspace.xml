@@ -4,9 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8d78257a-36da-4d01-9659-df657bde4083" name="Changes" comment="Carpinteria">
+    <list default="true" id="8d78257a-36da-4d01-9659-df657bde4083" name="Changes" comment="Navegación en el area de movimientos">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_7_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_7_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_7_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_crypto_5_7_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_7_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/UdeA/Ciclo3/security/SecConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ciclo3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Ciclo3.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/UdeA/Ciclo3/Ciclo3Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/UdeA/Ciclo3/Ciclo3Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/UdeA/Ciclo3/controller/ControllerFull.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/UdeA/Ciclo3/controller/ControllerFull.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/UdeA/Ciclo3/modelos/Empleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/UdeA/Ciclo3/modelos/Empleado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/agregarEmpleado.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/agregarEmpleado.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/agregarEmpresa.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/agregarEmpresa.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/agregarMovimiento.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/agregarMovimiento.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/editarEmpleado.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/editarEmpleado.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/editarEmpresa.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/editarEmpresa.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/verEmpleados.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/verEmpleados.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/verEmpresas.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/verEmpresas.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/verMovimientos.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/verMovimientos.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -181,7 +198,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662641283700</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Navegación en el area de movimientos">
+      <created>1662725173512</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1662725173512</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -207,6 +231,7 @@
     <MESSAGE value="Full Stack Empleados" />
     <MESSAGE value="Full Stack (Pendientes algunos criterios)" />
     <MESSAGE value="Carpinteria" />
-    <option name="LAST_COMMIT_MESSAGE" value="Carpinteria" />
+    <MESSAGE value="Navegación en el area de movimientos" />
+    <option name="LAST_COMMIT_MESSAGE" value="Navegación en el area de movimientos" />
   </component>
 </project>
