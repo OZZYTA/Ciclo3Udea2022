@@ -20,6 +20,9 @@
 <body>
 
 <div class="container">
+  <p th:inline="text" class="text-right">User: [[${#httpServletRequest.remoteUser}]]</p>
+  <button type="button" class="btn btn-danger" style="float:right"><a th:href="@{/logout}">Cerrar Sesión</a></button>
+
   <h1> Modifique aqui los datos del Movimiento</h1>
   <br>
   <!--Crear formulario para cambiar los datos del movimiento y guardarlo en el objeto mov -->

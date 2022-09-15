@@ -21,7 +21,7 @@
 
 <div class="container">
   <button type="button" class="btn btn-danger" style="float:right"><a th:href="@{/logout}">Cerrar Sesión</a></button>
-
+  <p th:inline="text" class="text-right">User: [[${#httpServletRequest.remoteUser}]]</p>
   <h1> Agregue aqui los datos del Movimiento</h1>
   <br>
   <!--Crear formulario para llenar los datos del movimiento y guardarlo en el objeto mov -->
@@ -60,8 +60,8 @@
       <div class="form-group col-md-12">
         <label class="col-md-3" for="usuario">Empleado responsable:</label>
         <div class="col-md-6">
-          <select th:field="*{usuario}" class="form-control" id="usuario" required="required">
-            <option th:each="empleado : ${emplelist}" th:text="${empleado.nombre}" th:value="${empleado.id}"></option>
+          <select th:field="*{usuario}" class="form-control" id="usuario" required="required" readonly>
+            <option th:text="${#httpServletRequest.remoteUser}" th:value="${idEmpleado}"></option>
           </select>
         </div>
       </div>
