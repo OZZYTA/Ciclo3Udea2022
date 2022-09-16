@@ -65,16 +65,16 @@
       </div>
     </div>
 
-    <!--Campo para empleado (usuario responsable)-->
+    <!--Campo para usuario-->
     <div class="row">
       <div class="form-group col-md-12">
-        <label class="col-md-3" for="usuario">Empleado responsable:</label>
+        <label class="col-md-3" for="usuario">Responsable del movimiento:</label>
         <div class="col-md-6">
-          <select th:field="*{usuario}" class="form-control" id="usuario" required="required">
-            <option th:each="empleado : ${emplelist}" th:text="${empleado.nombre}" th:value="${empleado.id}"></option>
+          <select th:field="*{usuario}" class="form-control" id="usuario" required="required" readonly>
+            <option th:value=*{usuario.id} th:text=*{usuario.correo}></option>
           </select>
-        </div>
       </div>
+    </div>
     </div>
 
     <!--Campo para fecha-->
