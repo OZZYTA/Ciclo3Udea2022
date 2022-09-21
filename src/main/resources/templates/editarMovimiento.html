@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Editar datos de Movimiento - Ciclo3</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    a{
+    color:white;
+    }
+    a:hover {
+    color: black;
+    text-decoration:none;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <p th:inline="text" class="text-right">User: [[${#httpServletRequest.remoteUser}]]</p>
+  <button type="button" class="btn btn-danger" style="float:right"><a th:href="@{/logout}">Cerrar Sesión</a></button>
+
+  <h1> Modifique aqui los datos del Movimiento</h1>
+  <br>
+  <!--Crear formulario para cambiar los datos del movimiento y guardarlo en el objeto mov -->
+  <form th:action="@{/ActualizarMovimiento}" th:object="${mov}" method="post">
+    <!--Campo para id-->
+    <div class="row">
+      <div class="form-group col-md-12">
+        <label class="col-md-3" for="id">ID del movimiento:</label>
+        <div class="col-md-6">
+          <input type="text" th:field="*{id}" class="form-control" id="id" required="required" readonly></div>
+      </div>
+    </div>
+
+    <!--Campo para Concepto-->
+    <div class="row">
+      <div class="form-group col-md-12">
+        <label class="col-md-3" for="concepto">Concepto del Movimiento:</label>
+        <div class="col-md-6">
+          <select th:field="*{concepto}" class="form-control" id="concepto" required="required">
+            <option th:value=1>Papeleria</option>
+            <option th:value=2>Servicios Publicos/Privados</option>
+            <option th:value=3>Operativos</option>
+            <option th:value=4>Caja menor</option>
+            <option th:value=5>Tributario</option>
+            <option th:value=6>Mobiliario</option>
+            <option th:value=7>Maquinaria y Equipo</option>
+            <option th:value=8>Nomina</option>
+
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!--Campo para monto-->
+    <div class="row">
+      <div class="form-group col-md-12">
+        <label class="col-md-3" for="monto">Valor del movimiento:</label>
+        <div class="col-md-6">
+          <input type="number" th:field="*{monto}" class="form-control" id="monto" required="required"></div>
+      </div>
+    </div>
+
+    <!--Campo para usuario-->
+    <div class="row">
+      <div class="form-group col-md-12">
+        <label class="col-md-3" for="usuario">Responsable del movimiento:</label>
+        <div class="col-md-6">
+          <select th:field="*{usuario}" class="form-control" id="usuario" required="required" readonly>
+            <option th:value=*{usuario.id} th:text=*{usuario.correo}></option>
+          </select>
+      </div>
+    </div>
+    </div>
+
+    <!--Campo para fecha-->
+    <div class="row">
+      <div class="form-group col-md-12">
+        <label class="col-md-3" for="fecha">Fecha del movimiento:</label>
+        <div class="col-md-6">
+          <input type="date" th:field="*{fecha}" class="form-control" id="fecha" required="required" readonly></div>
+      </div>
+    </div>
+
+
+
+    <!--Boton para enviar todo y ejecutar accion -->
+    <div class="row">
+      <div class="col-md-2">
+        <button class="btn btn-success">Actualizar Movimiento</button>
+      </div>
+    </div>
+
+  </form>
+
+  <br>
+  <a href="javascript: history.go(-1)" class="btn btn-info" role="button">Atrás</a>
+
+</div>
+
+</body>
+</html>
