@@ -21,13 +21,7 @@ public class SecConfig extends WebSecurityConfigurerAdapter {
     @Autowired
     CustomSuccessHandler customSuccessHandler;
 
-    @Autowired
-    public void configAuthentication(AuthenticationManagerBuilder auth) throws Exception{
-        auth.jdbcAuthentication().passwordEncoder(new BCryptPasswordEncoder())
-                .dataSource(dataSource)
-                .usersByUsernameQuery("select correo,password,estado from empleado where correo=?")
-                .authoritiesByUsernameQuery("select correo, rol from empleado where correo=?");
-    }
+    
 
 
     @Override
