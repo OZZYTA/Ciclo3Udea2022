@@ -12,7 +12,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import javax.sql.DataSource;
 
 @Configuration
-public class SecConfig extends WebSecurityConfigurerAdapter {
+public class SecConfig  {
 
     @Autowired
     private DataSource dataSource;
