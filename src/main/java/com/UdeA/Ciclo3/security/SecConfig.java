@@ -28,7 +28,7 @@ public class SecConfig extends WebSecurityConfigurerAdapter {
                 .usersByUsernameQuery("select correo,password,estado from empleado where correo=?")
                 .authoritiesByUsernameQuery("select correo, rol from empleado where correo=?");
     }
-
+("/AgregarEmpleado")
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
@@ -36,6 +36,8 @@ public class SecConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/","VerEmpresas/**").hasRole("ADMIN")
                 .antMatchers("/VerEmpleados/**").hasRole("ADMIN")
                 .antMatchers("/Empresa/**").hasRole("ADMIN")
+                .antMatchers("/AgregarEmpleado").permitAll()
+                .antMatchers("/GuardarEmpleado").permitAll()
                 .antMatchers("/Empleado/**").hasRole("ADMIN")
                 .antMatchers("/VerMovimientos/**").hasAnyRole("ADMIN","USER")
                 .antMatchers("/AgregarMovimiento/**").hasAnyRole("ADMIN","USER")
