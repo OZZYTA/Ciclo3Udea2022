@@ -28,7 +28,6 @@ public class SecConfig extends WebSecurityConfigurerAdapter {
                 .usersByUsernameQuery("select correo,password,estado from empleado where correo=?")
                 .authoritiesByUsernameQuery("select correo, rol from empleado where correo=?");
     }
-("/AgregarEmpleado")
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
