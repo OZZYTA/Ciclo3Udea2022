@@ -11,6 +11,7 @@
 	<groupId>com.UdeA</groupId>
 	<artifactId>ciclotres</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
 	<name>ciclotres</name>
 	<description>Proyecto para el ciclo 3 Mision TIC 2022</description>
 	<properties>
