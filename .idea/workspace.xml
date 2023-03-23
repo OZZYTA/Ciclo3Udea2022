@@ -5,14 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8d78257a-36da-4d01-9659-df657bde4083" name="Changes" comment="Autenticación por perfiles">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ciclo3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Ciclo3.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/accessDenied.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/accessDenied.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/agregarEmpleado.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/agregarEmpleado.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/agregarEmpresa.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/agregarEmpresa.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/agregarMovimiento.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/agregarMovimiento.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/editarEmpleado.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/editarEmpleado.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/editarEmpresa.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/editarEmpresa.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/editarMovimiento.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/editarMovimiento.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/verEmpleados.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/verEmpleados.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/verEmpresas.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/verEmpresas.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/agregarEmpleado.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/agregarEmpleado.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/verMovimientos.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/verMovimientos.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/verEmpresas.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/verEmpresas.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

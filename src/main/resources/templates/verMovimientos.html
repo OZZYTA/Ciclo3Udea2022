@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Lista de Movimientos - Ciclo3</title>
+    <title>Lista de Empresas</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -9,7 +9,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-<style>
+
+    <style>
     a{
     color:white;
     }
@@ -17,9 +18,50 @@
     color: black;
     text-decoration:none;
     }
+
+    .nav.navbar-nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-right: 300px;
+}
+
+    .logo-badmin {
+  margin-left: 100px;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav {
+    float: none;
+  }
+}
+.jumbotron {
+  background: url('background.png') repeat-x, repeat-y;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 </style>
 </head>
-<body>
+<body><br><br>
+<div class="jumbotron">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="#" class="logo-badmin" style="color:black"><img src="logo.png"></a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="#" style="color:grey"><b>Home</b></a></li>
+                <li><a href="#" style="color:grey"><b>Services</b></a></li>
+                <li><a href="#" style="color:grey"><b>About</b></a></li>
+                <li><a href="#" style="color:grey"><b>Careers</b></a></li>
+                <li><a href="#" style="color:grey"><b>Work</b></a></li>
+            </ul>
+        </div>
+    </nav>
 
 <div class="container">
     <p th:inline="text" class="text-right">User: [[${#httpServletRequest.remoteUser}]]</p>
